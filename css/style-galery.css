@@ -82,14 +82,13 @@ body {
 
 .product-img img{
    width: 100%;
+   height: auto;
 }
 
 
 .swiper-slide:hover {
     background: linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(221, 141, 20) 100%);
-   
-
-}
+ }
 
 .btn-1{
     display: inline-block;
@@ -115,5 +114,22 @@ body {
     .swiper{
         width: 100%;
         padding: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .swiper {  /* Reemplaza "tu-clase" por la clase de tu div */
+        max-width: 100%;  /* Reduce el ancho */
+        padding: 10px;  /* Reduce el padding */
+        font-size: 14px;  /* Reduce el tamaño del texto */
+    }
+
+    .product-img img {
+        width: 100%;  /* Ajusta el tamaño de la imagen */
+    }
+
+    .swiper-slide{
+        max-width: 85%;
     }
 }
